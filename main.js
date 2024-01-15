@@ -4,7 +4,7 @@
        var field1 = document.getElementById('field1').value;
        var category = document.getElementById('category').value;
 
-       google.script.run.myFunction(field1, category);
+       google.script.run.doPost(field1, category);
    });
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
