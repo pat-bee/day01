@@ -22,7 +22,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         data[checkbox.name] = checkbox.value;
     });
 
-    fetch('https://script.google.com/macros/s/AKfycbzAB5fT9nkCuh-RMpfADdoP7P8Shyyxs3iUYFhI97lqfEF4PW5N7u2a6EzFl8HUcN8_/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbzOM0Kiv2Bs_sP-ic5_NptonAWC5RFo4S-2shkI-lYS25xaDn283T6tpLAnl0fo-M9G/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
