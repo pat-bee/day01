@@ -1,2 +1,100 @@
-<h1>Hello World!</h1>
-<p>Day1 Start</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODAY</title> <!-- Changed title to "TODAY" -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #FAFAFA;
+        }
+        div { 
+            padding: 25px;
+        }
+        .btn-submit {
+            background-color: #ED1041;
+            color: #FAFAFA;
+            display: block;
+            margin: auto;
+            width: 50%;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .todo-item {
+            color: #02716B;
+        }
+        .form-container, .list-container {
+            max-width: 60%;
+            margin: auto;
+        }
+        @media (max-width: 768px) {
+            .form-container, .list-container {
+                max-width: 100%;
+            }
+        }
+        .form-control {
+            font-size: 1.25em;
+        }
+        h2 { 
+            font-family: monospace;
+            font-size: 44px;
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="list-container">
+            <h2 class="text-center">TODAY</h2>
+                <h6 style="text-align: center;"><span id="date">January 14, 2024</span></h6>
+            <ul class="list-group">
+                <!-- Replace these placeholder items with your actual to-do items -->
+                <li class="list-group-item todo-item">
+                    <input type="checkbox" id="item1" name="item1">
+                    <label for="item1">Placeholder item 1</label>
+                </li>
+                <li class="list-group-item todo-item">
+                    <input type="checkbox" id="item2" name="item2">
+                    <label for="item2">Placeholder item 2</label>
+                </li>
+                <li class="list-group-item todo-item">
+                    <input type="checkbox" id="item3" name="item3">
+                    <label for="item3">Placeholder item 3</label>
+                </li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+        <div class="form-container">
+            <form id="myForm">
+                <input type="text" id="field1" name="field1" class="form-control" placeholder="Field 1">
+                
+                <!-- New pick list (select) element -->
+                <select id="category" name="category" class="form-control">
+                    <option value="IDid4ME">ToDo</option>
+                    <option value="IDid4ME">IDid4ME</option>
+                    <option value="HappyFace">HappyFace</option>
+                    <option value="SadFace">SadFace</option>
+                    <option value="Poetry">Poetry</option>
+                    <option value="Therapy">Therapy</option>
+                    <option value="SelfRegulationDemerit">Self Regulation Demerit</option>
+                    <option value="Notes">Noteś</option>
+                    <option value="IDid4ME">ToDo-BIGdeal!</option>
+                </select>
+
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="main.js"><script>
+    // Get the current date
+    var today = new Date();
+
+    // Format the date as desired (e.g., "January 15, 2024")
+    var formattedDate = today.toLocaleDateString();
+
+    // Set the inner content of the placeholder element to the formatted date
+    document.getElementById("date").innerHTML = formattedDate;
+    </script>
+    
+</body>
