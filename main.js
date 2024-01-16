@@ -15,7 +15,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     });
 
     // Fetch request to Google Apps Script Web App URL
-    fetch('https://script.google.com/macros/s/AKfycbzOM0Kiv2Bs_sP-ic5_NptonAWC5RFo4S-2shkI-lYS25xaDn283T6tpLAnl0fo-M9G/exec', { // <-- Replace with your Web App URL
+    fetch('https://script.google.com/macros/s/AKfycbwA5deCUEEtWnBDH7CeGas_XPeAPLLdbhCeq3dX8HaQoRImYwcHaVCUWQm-4Dackkn6/exec', { // <-- Replace with your Web App URL
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
