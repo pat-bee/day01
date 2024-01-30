@@ -67,36 +67,7 @@
         }
         
     </style>
-    <script>
-        async function fetchSheetData() {
-  const sheetId = '1kGrhPEnp_L6ffOW0jtxXbu6LH6ZLWp156NfxQM8RT58';   //1A0Jy2M2jzc7MnEtbxx9g_yzXWPIp5sivgkDjiPTAFSA
-  const apiKey = 'AIzaSyC_HSaClyaQLzSmSZxefVpJOTBRW6Lu6nY';
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/daydatatest?key=${apiKey}`;
-
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
-    const rows = data.values; // 'values' contains the sheet data.
-    displayData(rows);
-  } catch (error) {
-    console.error('Error fetching sheet data:', error);
-  }
-}
-
-function displayData(rows) {
-  const list = document.getElementById('sheet-data');
-  rows.forEach((row, index) => {
-    if (index > 0) { // Skip header row
-      const listItem = document.createElement('li');
-      listItem.textContent = row.join(', '); // Customize based on your data structure
-      list.appendChild(listItem);
-    }
-  });
-}
-
-// Call the function when the window loads
-window.onload = () => fetchSheetData();
-    </script>
+   
 
 <script> 
 const sheetId = '1jZ5BgnbNX_rpgHugpXv7K5CO1_j-lWusbV6WhhPnAc8';
