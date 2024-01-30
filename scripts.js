@@ -1,4 +1,3 @@
-<script> 
 const sheetId = '1jZ5BgnbNX_rpgHugpXv7K5CO1_j-lWusbV6WhhPnAc8';
 const apiKey = 'AIzaSyBRbknpZp8vitntt5OwwAI0OMIcEhgUK7o';
 const range = 'daydatatest!A1:B10'; // Adjust based on your actual data range
@@ -22,4 +21,3 @@ function fetchSheetData() {
     });
 }
 
-</script>  
